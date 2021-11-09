@@ -76,8 +76,8 @@ const ColumnName = "ColumnName";
 
 
 export var csvFunctions = {
-        displayName: "Read CSV as JSON",
-        description: "CSV to JSON Object",
+        displayName: "Read CSV in K2",
+        description: "Read CSV in K2",
 
         properties: {
           csv: {
@@ -588,6 +588,7 @@ export function onexecutelistHeaders(parameters: SingleRecord, properties: Singl
       var lines = [];
       var indexToFind: number = + properties["id"];
 
+
       var counter = 0;
       lines = csvStr.split(/\r?\n/);
        var headerRow = lines[0];
@@ -626,6 +627,8 @@ export function onexecutereadRowHeaders(parameters: SingleRecord, properties: Si
       var reg = new RegExp('"', 'g');
       var lines = [];
       var indexToFind: number = + properties[ID];
+
+
 
       lines = csvStr.split(/\r?\n/);
        var headerRow = lines[0];

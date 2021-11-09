@@ -119,8 +119,8 @@ function buildIndexJSSP(inputFile) {
 
 
 export default [
-  buildConfig("src/CSVUtilities.ts"), 
-  buildIndexJSSP('src/CSVUtilities.ts'),
+  buildConfig("src/CSVFunctions.ts"), 
+  buildIndexJSSP('src/CSVFunctions.ts'),
   buildTestConfig("src/test.ts")
 
 ];
