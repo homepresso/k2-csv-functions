@@ -1,6 +1,6 @@
 import test from "ava";
 import "@k2oss/k2-broker-core/test-framework";
-import "./CSVUtilities";
+import "./CSVFunctions";
 
 function mock(name: string, value: any) {
   global[name] = value;
