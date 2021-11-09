@@ -1,72 +1,13 @@
-# K2 TypeScript Broker Template
+# Read CSV in K2
 
-This is demonstrates best-practices for developing a K2 Broker using TypeScript.
+Read a CSV file in K2
+Wrap CSV Base64 content in <Content></Content>
 
 # Features
 
-- Full object model intellisense for making development easier
-- Sample broker code that accesses jsonplaceholder.
-- Sample unit tests with mocks and code coverage.
-- RollupJS configuration for TypeScript.
+- Combine Strings for Salesforce BULK API Upload
+- Get a Row from CSV File
+- List Headers From CSV
+- Read CSV
+- Read Header row from CSV
 
-## Getting Started
-
-This template requires [Node.js](https://nodejs.org/) v12.14.1+ to run.
-
-Install the dependencies and devDependencies:
-
-```bash
-npm install
-```
-
-Alternatively, use pnpm to reduce the size of the `node_modules` directory:
-
-```bash
-npm install -g pnpm # Only required once
-pnpm install
-```
-
-See the documentation for [@k2oss/k2-broker-core](https://www.npmjs.com/package/@k2oss/k2-broker-core)
-for more information about how to use the broker SDK package.
-
-## Running Unit Tests
-
-To run the unit tests, run:
-
-```bash
-npm test
-pnpm test # Alternative
-```
-
-You can also use a development build, for debugging and coverage gutters:
-
-```bash
-npm run test:dev
-pnpm run test:dev # Alternative
-```
-
-You will find the code coverage results in [coverage/index.html](./coverage/index.html).
-
-## Building your bundled JS
-
-When you're ready to build your broker, run the following command
-
-```bash
-npm run build
-pnpm run build # Alternative
-```
-
-You will find the results in the [dist/index.js](./dist/index.js).
-
-## Creating a service type
-
-Once you have a bundled .js file, upload it to your repository (anonymously
-accessible) and register the service type using the system SmartObject located
-at System > Management > SmartObjects > SmartObjects > JavaScript Service
-Provider and run the Create From URL method.
-
-### License
-
-MIT, found in the [LICENSE](./LICENSE) file.
-
-[www.k2.com](https://www.k2.com)
